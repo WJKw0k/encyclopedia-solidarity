@@ -1,0 +1,313 @@
+AE * Akademia Ekonomiczna
+
+AGH * Akademia Górniczo-Hutnicza
+
+AK * Armia Krajowa
+
+AM * Akademia Medyczna
+
+AR * Akademia Rolnicza
+
+AR-T * Akademia Rolniczo-Techniczna
+
+ATK * Akademia Teologii Katolickiej w Warszawie
+
+AWF * Akademia Wychowania Fizycznego
+
+ChD * Chrześcijańska Demokracja
+
+ChDSP * Chrześcijańsko-Demokratyczne Stronnictwo Pracy
+ChSS * Chrześcijańskie Stowarzyszenie Społeczne
+
+CRZZ * Centralna Rada Związków Zawodowych
+
+CUP * Centralny Urząd Planowania
+
+d. * dawniej
+
+EWG * Europejska Wspólnota Gospodarcza
+
+FSZMP * Federacja Socjalistycznych Związków Młodzieży Polskiej
+KIK * Klub Inteligencji Katolickiej
+
+KLD * Kongres Liberalno-Demokratyczny
+
+Klub LD * Klub Liberalno-Demokratyczny
+
+KO * Komitet Obywatelski
+
+KOR * Komitet Obrony Robotników
+
+KP-UD * Klub Parlamentarny-Unia Demokratyczna
+
+KP SLD * Klub Parlamentarny Sojusz Lewicy Demokratycznej
+KP PPL * Klub Parlamentarny Polski Program Liberalny
+
+KP KLD * Klub Parlamentarny Kongresu Liberalno-Demokratycznego
+KP PC * Klub Parlamentarny Porozumienia Centrum
+
+KP ZCHN * Klub Parlamentarny Zjednoczenia Chrześcijańsko-Narodowego
+KP KPN * Klub Parlamentarny Konfederacji Polski Niepodległej
+KP PL * Klub Parlamentarny Porozumienie Ludowe
+
+KP SD * Klub Poselski Stronnictwa Demokratycznego
+
+KSS "KOR" * Komitet Samoobrony Społecznej "KOR"
+
+KUL * Katolicki Uniwersytet Lubelski
+
+KWK * Kopalnie Węgla Kamiennego
+
+KZ * Komisja Zakładowa
+
+LO * Liceum Ogólnokształcące
+
+Medal KEN * Medal "Komisji Edukacji Narodowej”
+
+MEN * Ministerstwo Edukacji Narodowej [
+MKO * Międzyzakładowy Komitet Organizacyjny |
+MKZ * Międzyzakładowy Komitet Założycielski
+
+MON * Ministerstwo Obrony Narodowej l
+
+MPiPS * Ministerstwo Pracy i Polityki Socjalnej Hi
+MPW * Ministerstwo Przekształceń Własnościowych pi
+MRiGŻ * Ministerstwo Rolnictwa i Gospodarki Żywnościowej
+
+MSW * Ministerstwo Spraw Wewnętrznych
+
+MSZ * Ministerstwo Spraw Zagranicznych
+
+MTiGM * Ministerstwo Transportu i Gospodarki Morskiej
+
+nadzw. * nadzwyczajny
+
+NOT * Naczelna Organizacja Techniczna
+
+NSZZ * Niezależny Samorządny Związek Zawodowy
+
+NSZZ RI * Niezależny Samorządny Związek Zawodowy Rolników Indywidualnych
+ 
+
+NZS * Niezależne Zrzeszenie Studentów
+
+ODiSS * Ośrodek Dokumentacji i Studiów Społecznych w Warszawie
+OHP * Ochotnicze Hufce Pracy
+
+OKP * Obywatelski Klub Parlamentarny
+
+OOP * Orderu Odrodzenia Polski
+
+ORMO * Ochotnicza Rezerwa Milicji Obywatelskiej
+
+OSP * Ochotnicza Straż Pożarna
+
+PAT * Papieska Akademia Teologiczna w Krakowie
+
+PC * Porozumienie Centrum
+
+PCHD * Partia Chrześcijańskich Demokratów
+
+PCK * Polski Czerwony Krzyż
+
+PGR * Państwowe Gospodarstwo Rolne
+
+PKLD * Parlamentarny Klub Lewicy Demokratycznej
+
+PKP * Polskie Koleje Państwowe
+
+PKPS * Polski Komitet Pomocy Społecznej
+
+POM * Państwowy Ośrodek Maszynowy
+
+PPPP * Polska Partia Przyjaciół Piwa
+
+PPS * Polska Partia Socjalistyczna
+
+PRL * Polska Rzeczypospolita Ludowa
+
+PRON * Patriotyczny Ruch Odrodzenia Narodowego
+
+PSL * Polskie Stronnictwo Ludowe
+
+PTTK * Polskie Towarzystwo Turystyczno-Krajoznawcze
+PWST * Państwowa Wyższa Szkoła Teatralna
+
+PWT * Papieski Wydział Teologiczny
+
+PZKS * Polski Związek Katolicko-Społeczny
+
+PZKS * Polski Komitet Pomocy Społecznej
+
+PZMot * Polski Związek Motorowy
+
+PZTIB * Polski Związek Techników i Inżynierów Budownictwa
+RdR * Ruch dla Rzeczypospolitej
+
+ROPCiO * Ruch Obrony Praw Człowieka i Obywatela
+
+SD * Stronnictwo Demokratyczne
+
+SDP * Stowarzyszenie Dziennikarzy Polskich
+
+SDRP * Stowarzyszenie Dziennikarzy Rzeczypospolitej Polskiej
+SdRP * Socjaldemokracja Rzeczypospolitej Polskiej
+
+SGGW * Szkoła Główna Gospodarstwa Wiejskiego w Warszawie (Akademia Rolnicza)
+
+SGH * Szkoła Główna Handlowa w Warszawie
+
+SGPiS * Szkoła Główna Planowania i Statystyki w Warszawie
+SIMP * Stowarzyszenie Inżynierów Mechaników Polskich
+SITR * Stowarzyszenie Inżynierów i Techników Rolnictwa
+SLCh * Stronnictwo Ludowo-Chrześcijańskie
+
+SP * Stronnictwo Pracy
+
+SPAM * Stowarzyszenie Polskich Artystów Muzyki
+
+SPATiF * Stowarzyszenie Polskich Artystów Teatru i Filmu
+SWP NOT * Stowarzyszenie Włókienników Polskich Naczelnej Organizacji Technicznej
+
+SZP * Szkoła Podstawowa
+
+SZSP * Socjalistyczny Związek Studentów Polskich
+
+st. * starszy (stopień)
+
+TKN * Towarzystwo Kursów Naukowych
+
+TPPR * Towarzystwo Przyjaźni Polsko-Radzieckiej
+
+TVP * Telewizja Polska
+
+TWP * Towarzystwo Wiedzy Powszechnej
+
+KR * Związek Polskich Autorów i Kompozytorów
+SP * Związek Artystów Scen Polskich
+
+ZBoWiD * Związek Bojowników o Wolność i Demokrację
+
+ZCHN * Zjednoczenie Chrześcijańsko-Narodowe
+
+ZG * Zarząd Główny
+
+ZHP * Związek Harcerstwa Polskiego
+
+ZLP * Związek Literatów Polskich
+
+ZMP * Związek Młodzieży Polskiej
+
+ZMW * Związek Młodzieży Wiejskiej
+
+ZNP * Związek Nauczycielstwa Polskiego
+
+ZOSP * Związek Ochotniczych Straży Pożarnych
+
+ZSL * Zjednoczone Stronnictwo Ludowe
+
+ZSMW * Związek Socjalistycznej Młodzieży Wiejskiej
+
+ZSP * Zrzeszenie Studentów Polskich
+
+Zw. * zwyczajny
+AK * Armia Krajowa
+
+ANS * Akademia Nauk Społecznych przy KC PZPR
+ASP * Akademia Sztuk Pięknych
+HiL * Huta im. Lenina
+KIK * Klub Inteligencji Katolickiej
+KK * Komisja Krajowa NSZZ „Solidarmość”
+KKP * Krajowa Komisja Porozumiewawcza NSZZ „Solidarność”
+KKW * Krajowa Komisja Wykonawcza NSZZ „Solidarność”
+Obywatelski  * Komitet Obywatelski przy Przewodniczącym NSZZ „Solidarność”
+KOR * Komitet Obrony Robotników
+KSS * Komitet Samoobrony Społecznej „KOR”
+KUL * Katolicki Uniwersytet Lubelski
+KWB * Kopalnia Węgla Brunatnego
+KWK * Kopalnia Węgla Kamiennego
+
+KZRKiOR * Krajowy Związek Rolników, Kółek i Organizacji Rolniczych
+MKK * Międzyzakładowa Komisja Koordynacyjna
+MKR * Międzyzakładowy Komitet Robotniczy „Solidarność”
+MKS * Międzyzakładowy Komitet Strajkowy
+
+MKZ * Międzyzakładowy Komitet Założycielski
+
+MOP * Międzynarodowa Organizacja Pracy
+
+NK * Naczelny Komitet
+
+NOT * Naczelna Organizacja Techniczna
+
+NSZZ * Niezależny Samorządny Związek Zawodowy
+
+NZS * Niezależne Zrzeszenie Studentów
+
+OPZZ * Ogólnopolskie Parozumienie Związków Zawodowych
+
+PAN * Polska Akademia Nauk
+
+PPS * Polska Partia Socjalistyczna
+
+PPSWRN * Polska Partia Socjalistyczna — Wolność, Równość, Niepodległość
+
+PRON * Patriotyczny Ruch Odrodzenia Narodowego
+
+Konsultacyjna  * Rada Konsultacyjna przy Przewodniczącym Rady Państwa
+
+RK * Rada Krajowa
+
+RKK * Regionalna Komisja Koordynacyjna
+
+RKS * Robotniczy Komitet Strajkowy
+
+RKW * Regionalna Komisja Wykonawcza
+
+RW * Rada Wojewódzka
+
+SARP * Stowarzyszenie Architektów Polskich
+
+SD * Stronnictwo Demokratyczne
+
+SDP * Stowarzyszenie Dziennikarzy Polskich
+
+SGGW.AR * Szkoła Główna Gospodarstwa Wiejskiego — Akademia Rolnicza
+SGPiS * Szkoła Główna Planowania i Statystyki
+
+RI * Niezależny Samorządny Związek Zawodowy Rolników Indywidnal-nych „Solidarność”
+
+SZSP * Socjalistyczny Związek Studentów Polskich
+
+TKK * Tymczasowa Komisja Koordynacyjna NSZZ „Solidarność”
+TKZ * Tajna Komisja Zakładowa, Tymczasowy Komitet Założycielski
+UJ * Uniwersytet Jagiellański
+
+UMCS * Uniwersytet im. Marii Curie-Skłodowskiej
+
+UW * Uniwersytet Warszawski
+
+WiN * Wolność i Niezawisłość
+
+WK * Wojewódzki Komitet
+
+WZZ * Wolne Związki Zawodowe
+ZAiKS * Stowarzyszenie Autorów ZAiKS
+ZHP * Związek Harcerstwa Pałskiego
+ZLP * Związek Literatów Polskich
+ZMP * Związek Młodzieży Pałskiej
+
+ZMS * Związek Młodzieży Socjalist -
+
+ZMW * Związek Młodzieży Wiejskiej
+ZNMS * Związek Niezależnej Młodzieży Socjalist
+ZPAP * Związek Polskich Artystów Plastyków
+ZSL * Zjednoczone Stronnictwo Ludowe
+
+ZSMP * Związek Socjalistycznej Młodzieży Polskiej
+ZSP * Zrzeszenie Studentów Polskich
+ZWZ * Związek Walki Zbrojnej
+ZZ  * związek zawodowy, związki zawodowe
+RP * Rzeczpospolita Polska
+UW * University of Warsaw
+ZSZ * Zasadniczą Szkołę Zawodową

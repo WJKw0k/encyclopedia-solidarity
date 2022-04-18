@@ -1,3 +1,5 @@
+import spacy
+
 def main():
     pass
 
