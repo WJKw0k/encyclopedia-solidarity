@@ -13,10 +13,18 @@ def get_abvs():
                 abvs[line[0].strip()] = line[1].strip()
     return abvs
 
-def orgs_to_csv(json_file):
+def dict_to_df(dict):
+    df = pd.DataFrame(dict)
+    # find row with max length
     
 
-def json_to_csv(json_file):
+def strip_polish_punct(sent):
+    for char in sent:
+        if char not in printable:
+            sent = sent.replace(char, '')
+    return sent
+
+def json_to_txt(json_file, json_file2):
     abvs  = get_abvs()
     # create a dataframe
     sents = []
@@ -39,14 +47,78 @@ def json_to_csv(json_file):
                 for abv in abvs:
                     sent = sent.replace(abv, abvs[abv])
                 sents.append(sent)
+    with open(json_file2, 'r') as f:
+        data = json.load(f)
+    for key in data:
+        # add data[key] to df
+        bio = data[key]['org_info']
+        # erase last sent
+        bio = bio[:-1]
+        bio = [sent for sent in bio if sent]
+        for sent in bio:
+            sent = sent.strip()
+            # if not empty
+            if len(sent) > 0:
+                print(len(sent), sent)
+                if len(sent) == 0:
+                    print(len(sent))
+                for abv in abvs:
+                    sent = sent.replace(abv, abvs[abv])
+                sents.append(sent)
+    # write sents to txt
+    with open('bio+org.txt', 'w') as f:
+        for sent in sents:
+            f.write(sent + '\n')
+
+
+def json_to_csv(json_file, json_file2):
+    abvs  = get_abvs()
+    # create a dataframe
+    sents = []
+    # read json as dict
+    with open(json_file, 'r') as f:
+        data = json.load(f)
+    for key in data:
+        # add data[key] to df
+        bio = data[key]['bio']
+        # erase last sent
+        bio = bio[:-1]
+        bio = [sent for sent in bio if sent]
+        for sent in bio:
+            sent = sent.strip()
+            # if not empty
+            if len(sent) > 0:
+                print(len(sent), sent)
+                if len(sent) == 0:
+                    print(len(sent))
+                for abv in abvs:
+                    sent = sent.replace(abv, abvs[abv])
+                sents.append(sent)
+    with open(json_file2, 'r') as f:
+        data = json.load(f)
+    for key in data:
+        # add data[key] to df
+        bio = data[key]['org_info']
+        # erase last sent
+        bio = bio[:-1]
+        bio = [sent for sent in bio if sent]
+        for sent in bio:
+            sent = sent.strip()
+            # if not empty
+            if len(sent) > 0:
+                print(len(sent), sent)
+                if len(sent) == 0:
+                    print(len(sent))
+                for abv in abvs:
+                    sent = sent.replace(abv, abvs[abv])
+                sents.append(sent)
     # convert sents to csv
     df = pd.DataFrame(sents)
     # rename col
     df.columns = ['sentence']
-    df.to_csv('biogramy_info.csv', index=False)
+    df.to_csv('sents.csv', index=False)
 def main():
-    
-    json_to_csv('biogramy_info.json')
+    json_to_csv('biogramy_info.json', 'orgs_info.json')
 
 
 if __name__ == '__main__':
