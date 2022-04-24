@@ -19,6 +19,16 @@ invalid_tags = ['strong']
 
 nlp = spacy.load("pl_core_news_sm")
 
+def extract_orgs(text):
+    seen = set()
+    accum = []
+    stuff = nlp(text)
+    for ent in stuff.ents:
+        if ent.label_ == 'orgName' and ent.text not in seen:
+            accum.append(ent.text)
+            seen.add(ent.text)
+    return accum
+
 
 def extract_stuff_from_desc(text):
     stuff = nlp(text)
@@ -111,6 +121,7 @@ def get_abvs():
                 new_info['bday'] = bday
                 new_info['college'] = college
                 new_info['birth_place'] = birthPlace
+                new_info['related_orgs'] = extract_orgs(' '.join(bio))
                 # add new info to json dump
                 json_data.append(new_info)
     os.chdir(orig)
