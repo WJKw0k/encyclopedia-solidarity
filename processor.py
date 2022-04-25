@@ -2,8 +2,11 @@ import json
 from string import printable
 import pandas as pd
 import os
+
+import spacy as spacy
 from bs4 import BeautifulSoup as bs
 import bs4
+import dateparser
 
 bios_html_path = 'html/solidarity/biogramy/'
 orgs_html_path = 'html/solidarity/orgs'
@@ -11,11 +14,75 @@ orgs_html_path = 'html/solidarity/orgs'
 test_file_name = '14879,Abgarowicz-Lukasz.html'
 
 # initialize json data
-json_data = dict()
+json_data = []
 invalid_tags = ['strong']
+
+nlp = spacy.load("pl_core_news_sm")
+
+def extract_orgs(text):
+    seen = set()
+    accum = []
+    stuff = nlp(text)
+    for ent in stuff.ents:
+        if ent.label_ == 'orgName' and ent.text not in seen:
+            accum.append(ent.text)
+            seen.add(ent.text)
+    return accum
+
+
+def extract_stuff_from_desc(text):
+    stuff = nlp(text)
+    dates = dict()
+    orgs = dict()
+    places = dict()
+    grad_phrases = {'ukończył', 'ukończyła', 'absolwent', 'absolwentka'}
+
+    for ent in stuff.ents:
+        if ent.label_ == 'date':
+            dates[ent.start_char] = dateparser.parse(ent.text)
+            if not dates[ent.start_char]:
+                tmp = ent.text.split(' ')
+                dates[ent.start_char] = dateparser.parse(' '.join(tmp[:3]))
+        elif ent.label_ == 'orgName':
+            orgs[ent.start_char] = ent.text
+        elif ent.label_ == 'placeName':
+            places[ent.start_char] = ent.text
+
+    bornFlag = False
+    college = None
+    collegeFlag = False
+    bday = None
+    birthPlace = None
+    birthPlaceFlag = False
+    for i, token in enumerate(stuff):
+        if token.text == 'ur':
+            bornFlag = True
+        elif token.text == 'w':
+            birthPlaceFlag = True
+        elif birthPlaceFlag and token.idx in places:
+            birthPlace = places[token.idx]
+            birthPlaceFlag = False
+        elif token.text.lower() in grad_phrases:
+            collegeFlag = True
+        elif collegeFlag and token.idx in orgs:
+            college = orgs[token.idx]
+            collegeFlag = False
+        elif bornFlag and token.idx in dates:
+            bday = dates[token.idx]
+            bornFlag = False
+    if bday:
+        bday = str(bday.date())
+    else:
+        bday = 'none'
+    if not college:
+        college = 'none'
+    if not birthPlace:
+        birthPlace = 'none'
+    return bday, college, birthPlace
 
 
 def get_abvs():
+    selector = 'strong:has(strong)'
     # save original directory
     orig = os.getcwd()
     # print(os.getcwd())
@@ -32,6 +99,9 @@ def get_abvs():
                 name = souped.find('meta', property='og:title')['content']
                 # get description metadata
                 description = souped.find('meta', property='og:description')['content']
+
+                bday, college, birthPlace = extract_stuff_from_desc(description)
+                # get Birth Year, University,
                 # get id from metadata
                 id = filename.split(',')[0]
                 # parse main article
@@ -48,11 +118,15 @@ def get_abvs():
                 new_info['name'] = name
                 new_info['description'] = description
                 new_info['bio'] = bio
+                new_info['bday'] = bday
+                new_info['college'] = college
+                new_info['birth_place'] = birthPlace
+                new_info['related_orgs'] = extract_orgs(' '.join(bio))
                 # add new info to json dump
-                json_data[id] = new_info
+                json_data.append(new_info)
     os.chdir(orig)
     # write info to a json dump
-    with open('biogramy_info.json', 'w', encoding='utf8') as outfile:
+    with open('biogramy_info_new.json', 'w', encoding='utf8') as outfile:
         json.dump(json_data, outfile, indent=4, ensure_ascii=False)
     return 0
 
@@ -124,11 +198,17 @@ def get_orgs_metadata():
     with open('orgs_and_bios.json', 'w', encoding='utf8') as outfile:
         json.dump(info, outfile, indent=4, ensure_ascii=False)
 
+# read the bio inifo from json
+def read_bio_info():
+    df = pd.read_json('biogramy_info_new.json')
+    print('done')
+
+
 
 def main():
-    get_orgs()
-    # abvs  = get_abvs()
-    # print(abvs)
+    # get_orgs()
+    abvs  = get_abvs()
+    print(abvs)
 
 
 if __name__ == '__main__':
